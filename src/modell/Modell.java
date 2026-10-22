@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package modell;
 
-/**
- *
- * @author foti.david
- */
+
 public class Modell {
  
     private final String[] nevek = {"arany", "ezüst", "bronz"};
@@ -17,7 +11,7 @@ public class Modell {
         "Az arany hazudik."
     };
  
-    private final int kincsHelye;   // 0, 1 vagy 2
+    private final int kincsHelye; 
     private int probalkozasok;
  
     public Modell() {
