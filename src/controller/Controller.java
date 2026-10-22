@@ -4,10 +4,30 @@
  */
 package controller;
 
-/**
- *
- * @author foti.david
- */
+
 public class Controller {
-    
+
+    private final Model model;
+    private final View view;
+
+    public Controller(Model model, View view) {
+        this.model = model;
+        this.view = view;
+    }
+
+    public void jatek() {
+        view.udvozles();
+        view.ladakMegjelenitese(model);
+
+        boolean megtalalta = false;
+        while (!megtalalta) {
+            int tipp = view.tippBekeres(model.getLadakSzama());
+            if (model.tippel(tipp)) {
+                megtalalta = true;
+            } else {
+                view.rossz(model.getNev(tipp));
+            }
+        }
+        view.nyert(model.getKincsLadaNev(), model.getProbalkozasok());
+    }
 }
