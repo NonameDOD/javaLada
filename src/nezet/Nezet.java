@@ -1,6 +1,7 @@
+package nezet;
+
 import java.util.Scanner;
 import modell.Modell;
-
 
 public class Nezet {
 

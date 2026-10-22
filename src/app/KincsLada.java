@@ -4,17 +4,17 @@
  */
 package app;
 
-/**
- *
- * @author Noname
- */
+import controller.Controller;
+import modell.Modell;
+import nezet.Nezet;
+
 public class KincsLada {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Modell model = new Modell();
+        Nezet view = new Nezet();
+        Controller controller = new Controller(model, view);
+        controller.jatek();
     }
-    
+   
 }
