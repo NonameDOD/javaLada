@@ -7,10 +7,10 @@ package controller;
 
 public class Controller {
 
-    private final Model model;
-    private final View view;
+    private final Modell model;
+    private final Nezet view;
 
-    public Controller(Model model, View view) {
+    public Controller(Modell model, Nezet view) {
         this.model = model;
         this.view = view;
     }
